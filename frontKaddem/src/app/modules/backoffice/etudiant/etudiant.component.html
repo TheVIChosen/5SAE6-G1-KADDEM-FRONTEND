@@ -1,0 +1,30 @@
+<div class="max-w-7xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-8">
+  <h2 class="text-3xl font-bold mb-6 text-gray-800">Liste des Étudiants</h2>
+
+  <div class="overflow-x-auto rounded-lg shadow-sm">
+    <table class="min-w-full bg-white border border-gray-300 rounded-lg">
+      <thead class="bg-gray-100 text-gray-700 uppercase text-sm tracking-wider">
+        <tr>
+          <th class="py-3 px-6 text-left">ID</th>
+          <th class="py-3 px-6 text-left">Nom</th>
+          <th class="py-3 px-6 text-left">Prénom</th>
+          <th class="py-3 px-6 text-left">Email</th>
+          <th class="py-3 px-6 text-left">Date d'Inscription</th>
+          <th class="py-3 px-6 text-left">Actions</th>
+        </tr>
+      </thead>
+      <tbody class="text-gray-600 text-sm">
+        <tr *ngFor="let etudiant of etudiants" class="hover:bg-gray-50">
+          <td class="py-4 px-6 border-b">{{ etudiant.id }}</td>
+          <td class="py-4 px-6 border-b">{{ etudiant.nom }}</td>
+          <td class="py-4 px-6 border-b">{{ etudiant.prenom }}</td>
+          <td class="py-4 px-6 border-b">{{ etudiant.email }}</td>
+          <td class="py-4 px-6 border-b">{{ etudiant.dateInscription }}</td>
+          <td class="py-4 px-6 border-b">
+            <button (click)="deleteEtudiant(etudiant.id)" class="text-red-500 hover:underline">Supprimer</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
