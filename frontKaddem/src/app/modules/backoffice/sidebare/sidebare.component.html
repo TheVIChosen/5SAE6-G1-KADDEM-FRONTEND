@@ -1,0 +1,34 @@
+<!-- sidebar.component.html -->
+<div class="flex flex-col w-64 bg-white shadow-lg h-full">
+  <!-- Logo et nom du projet -->
+  <div class="flex items-center h-20 bg-gray-300 px-2">
+    <p> </p> &nbsp; &nbsp; &nbsp; &nbsp;
+    <p class="text-center text-xl font-semibold ml-2">
+      <span class="text-gray-800 font-extrabold">KA</span>
+      <span class="text-red-500 font-extrabold">DDEM</span>
+    </p>
+  </div>
+
+  <!-- Liens de navigation -->
+  <nav class="flex-1 px-4 py-6 space-y-2 overflow-y-auto">
+    <a routerLink="/backoffice/Dashboard" routerLinkActive="active"
+      class="flex items-center text-gray-700 px-4 py-2 rounded hover:bg-blue-600 hover:text-white">
+      <span class="font-semibold">Tableau de bord</span>
+    </a>
+
+    <a routerLink="/backoffice/etudiant" routerLinkActive="active"
+      class="flex items-center text-gray-700 px-4 py-2 rounded hover:bg-blue-600 hover:text-white">
+      <span class="font-semibold">Etudiants</span>
+    </a>
+
+    <a routerLink="/backoffice/departement" routerLinkActive="active"
+      class="flex items-center text-gray-700 px-4 py-2 rounded hover:bg-blue-600 hover:text-white">
+      <span class="font-semibold">Départements</span>
+    </a>
+
+    <a routerLink="/backoffice/contrat" routerLinkActive="active"
+      class="flex items-center text-gray-700 px-4 py-2 rounded hover:bg-blue-600 hover:text-white">
+      <span class="font-semibold">Contrats</span>
+    </a>
+  </nav>
+</div>

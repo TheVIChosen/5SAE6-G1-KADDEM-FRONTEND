@@ -1,0 +1,25 @@
+<div class="max-w-7xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-8">
+  <h2 class="text-3xl font-bold mb-6 text-gray-800">Liste des Départements</h2>
+
+  <div class="overflow-x-auto rounded-lg shadow-sm">
+    <table class="min-w-full bg-white border border-gray-300 rounded-lg">
+      <thead class="bg-gray-100 text-gray-700 uppercase text-sm tracking-wider">
+        <tr>
+          <th class="py-3 px-6 text-left">ID</th>
+          <th class="py-3 px-6 text-left">Nom du Département</th>
+          <th class="py-3 px-6 text-left">Actions</th>
+        </tr>
+      </thead>
+      <tbody class="text-gray-600 text-sm">
+        <tr *ngFor="let departement of departements" class="hover:bg-gray-50">
+          <td class="py-4 px-6 border-b">{{ departement.idDepart }}</td>
+          <td class="py-4 px-6 border-b">{{ departement.nomDepart }}</td>
+          
+          <td class="py-4 px-6 border-b">
+            <button *ngIf="departement.idDepart !== undefined" (click)="deleteDepartement(departement.idDepart)" class="text-red-500 hover:underline">Supprimer</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
