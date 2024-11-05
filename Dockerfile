@@ -20,7 +20,7 @@ RUN npm run build -- --prod
 FROM nginx:alpine
 
 # Copy built files from the build stage to NGINX public directory
-COPY --from=build-stage /app/dist/<your-angular-app-name> /usr/share/nginx/html
+COPY --from=build-stage /app/dist/5SAE6-G1-KADDEM-FRONTEND /usr/share/nginx/html
 
 # Expose port 80 to access the application
 EXPOSE 80
