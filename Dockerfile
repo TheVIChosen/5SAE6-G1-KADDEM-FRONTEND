@@ -1,5 +1,5 @@
 # Use an official Node.js image as the base
-FROM node:18 as build-stage
+FROM node:18 AS build-stage
 
 # Set working directory in the container
 WORKDIR /app
