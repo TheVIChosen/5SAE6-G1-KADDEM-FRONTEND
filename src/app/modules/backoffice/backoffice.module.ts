@@ -6,6 +6,7 @@ import { MainlayoutComponent } from './mainlayout/mainlayout.component';
 import { EtudiantComponent } from './etudiant/etudiant.component';
 import { SidebareComponent } from './sidebare/sidebare.component';
 import { DepartmentComponent } from './department/department.component';
+import { EquipeComponent } from './equipe/equipe.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { DepartmentComponent } from './department/department.component';
     EtudiantComponent,
     SidebareComponent,
     DepartmentComponent,
+    EquipeComponent,
   ],
   imports: [CommonModule, BackofficeRoutingModule],
 })

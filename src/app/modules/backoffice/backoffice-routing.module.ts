@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainlayoutComponent } from './mainlayout/mainlayout.component';
 import { EtudiantComponent } from './etudiant/etudiant.component';
 import { DepartmentComponent } from './department/department.component';
+import { EquipeComponent } from './equipe/equipe.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,7 @@ const routes: Routes = [
     children: [
       { path: 'etudiant', component: EtudiantComponent },
       { path: 'departement', component: DepartmentComponent },
+      { path: 'equipe', component: EquipeComponent },
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' }, // Redirige vers dashboard par défaut
     ],
   },
