@@ -1,0 +1,45 @@
+/* Container styles to replace Bootstrap's .container and .mt-4 */
+.custom-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .custom-mt-4 {
+    margin-top: 1.5rem;
+  }
+  
+  /* Table styles to replace Bootstrap's .table and .table-bordered */
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .custom-table-bordered th,
+  .custom-table-bordered td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .custom-table-bordered tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Header styles to replace Bootstrap's .thead-dark */
+  .custom-thead th {
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* General table styling */
+  .custom-table th {
+    font-weight: bold;
+  }
+  
+  .custom-table td {
+    text-align: left;
+    padding: 10px;
+  }

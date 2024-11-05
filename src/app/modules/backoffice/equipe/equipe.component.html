@@ -1,0 +1,22 @@
+<div class="max-w-7xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-8">
+  <h2 class="text-3xl font-bold mb-6 text-gray-800">Liste des Équipes</h2>
+
+  <div class="overflow-x-auto rounded-lg shadow-sm">
+    <table class="min-w-full bg-white border border-gray-300 rounded-lg">
+      <thead class="bg-gray-100 text-gray-700 uppercase text-sm tracking-wider">
+        <tr>
+          <th class="py-3 px-6 text-left">ID</th>
+          <th class="py-3 px-6 text-left">Nom de l'Équipe</th>
+          <th class="py-3 px-6 text-left">Niveau</th>
+        </tr>
+      </thead>
+      <tbody class="text-gray-600 text-sm">
+        <tr *ngFor="let equipe of equipes" class="hover:bg-gray-50">
+          <td class="py-4 px-6 border-b">{{ equipe.idEquipe }}</td>
+          <td class="py-4 px-6 border-b">{{ equipe.nomEquipe }}</td>
+          <td class="py-4 px-6 border-b">{{ equipe.niveau }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
